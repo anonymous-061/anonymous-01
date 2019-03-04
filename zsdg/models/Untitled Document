@@ -1,0 +1,145 @@
+**** Epcoch 7/100 ****
+200/1000-(0.000): Train nll 0.072 PPL 1.075 attn_loss 0.133 distance 0.274 distance_semantic 0.011 loss_pack_warm 1.422 distance1 0.023
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+400/1000-(0.000): Train nll 0.081 PPL 1.084 attn_loss 0.152 distance 0.280 distance_semantic 0.011 loss_pack_warm 1.377 distance1 0.024
+600/1000-(0.000): Train nll 0.067 PPL 1.069 attn_loss 0.136 distance 0.280 distance_semantic 0.010 loss_pack_warm 1.474 distance1 0.026
+800/1000-(0.000): Train nll 0.066 PPL 1.068 attn_loss 0.122 distance 0.280 distance_semantic 0.010 loss_pack_warm 1.475 distance1 0.023
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+0/1000-(0.000): Train nll 0.068 PPL 1.070 attn_loss 0.124 distance 0.284 distance_semantic 0.008 loss_pack_warm 1.474 distance1 0.023
+
+=== Evaluating Model ===
+Train nll 0.071 PPL 1.073 attn_loss 0.133 distance 0.279 distance_semantic 0.010 loss_pack_warm 1.444 distance1 0.024
+Valid init with 65 batches with 0 left over samples
+Valid add with 10 warm up batches
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+********************************************
+Valid nll 0.113 PPL 1.119 attn_loss 0.171 distance 0.272 distance_semantic 0.225 loss_pack_warm 0.225 distance1 0.225
+Total valid loss 0.1594306081533432
+Generation: 50 batches
+Source:  </s>|<s> <sys> movie I believe you said Korea . Do you mean Drama? </s>|<s> <usr> movie Uh - huh . </s>|<s> <sys> movie I believe you said Drama . You dont_care, right? </s>|<s> <usr> movie No . </s>
+movie:: True: <sys> movie Okay, you dont_care . {" QUERY ": {"# genre ": " Drama ", "# years ": " dont_care ", "# country ": " Korea "}, " GOALS ": ["# default "]} ||| Pred: <sys> movie Do you mean Drama?
+[[Attention: <sys>(0.5185409784317017) movie(0.4018760621547699) you(0.37590280175209045) mean(0.7802253365516663) Drama(0.3888520896434784) ?(0.41018760204315186) </s>(0.49551936984062195)]]
+-
+Source: QUERY ": {"# genre ": " Family ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 20 "}} </s>|<s> <sys> movie Movie 20 is a good choice . Anything else? </s>|<s> <usr> movie Whatever is good . </s>
+movie:: True: <sys> movie Alright, dont_care . {" QUERY ": {"# genre ": " Family ", "# years ": " dont_care ", "# country ": " Japan "}, " GOALS ": ["# default "]} ||| Pred: <sys> movie {" QUERY ": {"# genre ": " Family ", "# years ": " 60s ", "# country ": " dont_care "}, " GOALS ": ["# director "]}
+[[Attention: <sys>(0.8369592428207397) QUERY(0.16056236624717712) ":(0.6441307663917542) {"#(0.4958685338497162) ":(0.79212486743927) "(0.6673364043235779) Family(0.9409576058387756) ",(0.759277880191803) "#(0.41955631971359253) ":(0.14688585698604584) "(0.6358673572540283) 60s(0.932626485824585) Family(0.23895086348056793) "(0.3689757287502289) </s>(0.6479964852333069)]]
+-
+Source: Crime ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 59 "}} </s>|<s> <sys> movie Movie 59 is a good choice . What else can I do? </s>|<s> <usr> movie Not done yet . Is this movie from MGM? </s>
+movie:: True: <sys> movie {" QUERY ": {"# genre ": " Crime ", "# years ": " 80s ", "# country ": " Korea "}, " GOALS ": ["# company "]} ||| Pred: <sys> movie {" QUERY ": {"# genre ": " Drama ", "# years ": " Korea "}, " GOALS ": ["# open "]}
+[[Attention: <sys>(0.7639683485031128) 59(0.13987544178962708) {"(0.14491623640060425) QUERY(0.43469226360321045) ":(0.7557348012924194) {"#(0.5724698901176453) ":(0.6697213649749756) "(0.7893711924552917) Drama(0.43503227829933167) ",(0.8508941531181335) "#(0.8902672529220581) ":(0.2106889933347702) "(0.7807263731956482) Korea(0.9956633448600769) "(0.7300111055374146) ":(0.5014466047286987) </s>(0.7347314953804016)]]
+-
+Source:  ", "# years ": " 2010 - present </s>|<s> <usr> movie {" RET ": {"# default ": " 109 "}} </s>|<s> <sys> movie Movie 109 is a good choice . What else can I do? </s>|<s> <usr> movie From Thailand . </s>
+movie:: True: <sys> movie {" QUERY ": {"# genre ": " Action ", "# years ": " 2010 - present ", "# country ": " USA "}, " GOALS ": ["# default "]} ||| Pred: <sys> movie {" QUERY ": {"# genre ": " Action ", "# years ": " Thailand "}, " GOALS ": ["# director "]}
+[[Attention: <sys>(0.8084139823913574) 109(0.21505552530288696) QUERY(0.1668654829263687) ":(0.510833740234375) {"#(0.27794909477233887) ":(0.6341711282730103) "(0.4869111180305481) Action(0.9649470448493958) ",(0.37085309624671936) "#(0.5462654829025269) ":(0.2234710454940796) "(0.35503262281417847) Thailand(0.7880666851997375) "(0.33321982622146606) ":(0.22202655673027039) </s>(0.7376484274864197)]]
+-
+Source:  Action ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 97 "}} </s>|<s> <sys> movie Movie 97 is a good choice . What else can I do? </s>|<s> <usr> movie One more thing . What' s the rating? </s>
+movie:: True: <sys> movie {" QUERY ": {"# genre ": " Action ", "# years ": " 2010 - present ", "# country ": " France "}, " GOALS ": ["# rating "]} ||| Pred: <sys> 97 {" QUERY ": {"# food_pref ": " Action ", "# loc ": " Family "}, " GOALS ": ["# open "]}
+[[Attention: <sys>(0.5884494185447693) 97(0.6970242261886597) {"(0.28914088010787964) QUERY(0.4201385974884033) ":(0.5594087839126587) {"#(0.654032289981842) ":(0.47319820523262024) "(0.5795279741287231) Action(0.9559168219566345) ",(0.5457817912101746) "#(0.6376782059669495) ":(0.5229239463806152) "(0.4176769554615021) Family(0.48591750860214233) "(0.4176226854324341) ":(0.35455161333084106) </s>(0.37441307306289673)]]
+-
+Source: 00 - 2010 </s>|<s> <usr> movie {" RET ": {"# rating ": " 3 "}} </s>|<s> <sys> movie The rating is 3 . Are you happy about my answer? </s>|<s> <usr> movie I want to search a new one . From China . </s>
+movie:: True: <sys> movie I believe you said China . Okay, you dont_care, do you? ||| Pred: <sys> I I believe you said From From From . Do you mean From?
+[[Attention: <sys>(0.4595157504081726) I(0.7028595805168152) you(0.4482128322124481) said(0.8336682319641113) From(0.7595205307006836) From(0.6450672745704651) From(0.660174548625946) you(0.29075726866722107) mean(0.596390426158905) From(0.8987385630607605) ?(0.31978344917297363) </s>(0.8180529475212097)]]
+-
+Source: vie {" RET ": {"# default ": " 196 "}} </s>|<s> <sys> movie Movie 196 is a good choice . What else can I do? </s>|<s> <usr> movie I hmm...have more requests . Is this movie from 20th Century Fox? </s>
+movie:: True: <sys> movie {" QUERY ": {"# genre ": " Family ", "# years ": " 70s ", "# country ": " France "}, " GOALS ": ["# company "]} ||| Pred: <sys> movie {" QUERY ": {"# genre ": " Family ", "# years ": " Family ", "# country ": " Family "}, " GOALS ": ["# open "]}
+[[Attention: <sys>(0.9677478671073914) {"(0.3083602488040924) QUERY(0.19459091126918793) ":(0.5886993408203125) {"#(0.7246783375740051) ":(0.3868144750595093) "(0.37432894110679626) Family(0.9242989420890808) ",(0.755465030670166) "#(0.6513527631759644) years(0.14246051013469696) ":(0.1358589231967926) "(0.6436337828636169) Family(0.5541239380836487) "(0.10443450510501862) 42(0.17322751879692078) "(0.13739876449108124) ":(0.3239661753177643) </s>(0.7035062313079834)]]
+-
+Source:  <usr> movie {" RET ": {"# default ": " 70 "}} </s>|<s> <sys> movie Movie 70 is a good choice . What else can I do? </s>|<s> <usr> movie I have uhm yeah I have more requests . What' s the rating? </s>
+movie:: True: <sys> movie {" QUERY ": {"# genre ": " Action ", "# years ": " 60s ", "# country ": " USA "}, " GOALS ": ["# rating "]} ||| Pred: <sys> movie {" QUERY ": {"# genre ": " Action ", "# years ": " 60s ", "# country ": " <sys> "}, " GOALS ": ["# open "]}
+[[Attention: <sys>(0.7519338726997375) 70(0.21181483566761017) ":(0.5715092420578003) {"#(0.5770859718322754) ":(0.3073538839817047) "(0.7950059175491333) Action(0.7879225015640259) ",(0.5057281851768494) "#(0.48980048298835754) "(0.7147033214569092) 60s(0.9587615132331848) <sys>(0.246496319770813) "(0.240740105509758) ":(0.48408806324005127) </s>(0.5427488684654236)]]
+-
+Source:  <sys> movie Do you mean 70s? </s>|<s> <usr> movie Yeah . </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Family ", "# years ": " 70s ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 169 "}} </s>
+movie:: True: <sys> movie Movie 169 is a good choice . Anything else? ||| Pred: <sys> 169 Restaurant 169 is a good choice . What else can I do?
+[[Attention: <sys>(0.9915822148323059) 169(0.5878836512565613) 169(1.0) is(0.9700177907943726) a(0.9991200566291809) good(0.9976881742477417) choice(0.9982178807258606) .(0.6067561507225037) else(0.9784774780273438) can(0.9977891445159912) I(0.6092091798782349) do(0.9989781379699707) ?(0.9558627009391785) </s>(0.8255946636199951)]]
+-
+Source: e Movie from France hmm...Oh sorry, Anything is fine . </s>|<s> <sys> movie {" QUERY ": {"# genre ": " dont_care ", "# years ": " 90s ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 167 "}} </s>
+movie:: True: <sys> movie Movie 167 is a good choice . Anything else? ||| Pred: <sys> movie Movie 167 is a good choice . Anything else?
+[[Attention: <sys>(0.6422356963157654) 167(0.4313535988330841) 167(0.9999042749404907) is(0.2585141658782959) a(0.3669995963573456) good(0.41417670249938965) choice(0.3669268786907196) .(0.5141618251800537) else(0.42172643542289734) ?(0.5235065221786499) </s>(0.5420059561729431)]]
+-
+Source:  movie I have more requests . Which company? </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Drama ", "# years ": " dont_care ", "# </s>|<s> <usr> movie {" RET ": {"# company ": " Walt Disney "}} </s>
+movie:: True: <sys> movie It' s made by Walt Disney . What else can I do? ||| Pred: <sys> movie No, The movie is Walt . Are you happy about my answer?
+[[Attention: <sys>(0.938748300075531) movie(0.18611319363117218) is(0.7856670618057251) Walt(0.9481155872344971) you(0.5165489912033081) ?(0.4956294000148773) </s>(0.5911699533462524)]]
+-
+Source: rom USA . Uhm hmm sorry, France . </s>|<s> <sys> movie I believe you said France . Do you mean Family? </s>|<s> <usr> movie Yeah . </s>|<s> <sys> movie Do you mean 70s? </s>|<s> <usr> movie Yes . </s>
+movie:: True: <sys> movie Do you mean 70s? ||| Pred: <sys> movie Do you mean 70s?
+[[Attention: <sys>(0.4455752968788147) movie(0.5889030694961548) you(0.5174486637115479) mean(0.7544387578964233) 70s(0.9014236330986023) ?(0.3792268931865692) </s>(0.37638792395591736)]]
+-
+Source: <sys> movie Do you mean France? </s>|<s> <usr> movie Yeah . </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Drama ", "# years ": " 80s ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 34 "}} </s>
+movie:: True: <sys> movie Movie 34 is a good choice . Anything else? ||| Pred: <sys> movie Movie 34 is a good choice . Are you happy about my answer?
+[[Attention: <sys>(0.5486955642700195) 34(0.988871157169342) is(0.7759904861450195) a(0.7081021070480347) good(0.5903005599975586) choice(0.799658477306366) .(0.715064287185669) you(0.8531092405319214) happy(0.9791371822357178) about(0.9882273077964783) my(0.9861705303192139) answer(0.9735490679740906) ?(0.5695725679397583) </s>(0.6222438216209412)]]
+-
+Source: he time period? </s>|<s> <usr> movie In 90s . From France . </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Crime ", "# years ": " 90s ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 17 "}} </s>
+movie:: True: <sys> movie Movie 17 is a good choice . What else can I do? ||| Pred: <sys> movie Movie 17 is a good choice . Are you happy about my answer?
+[[Attention: <sys>(0.7078821063041687) 17(0.20702210068702698) 17(0.9999815225601196) is(0.9547048807144165) a(0.9757658243179321) good(0.9903687834739685) choice(0.995435893535614) .(0.9257550239562988) you(0.9579727053642273) happy(0.984288215637207) about(0.9892680048942566) my(0.996612012386322) answer(0.986609160900116) ?(0.6820065975189209) </s>(0.7783123850822449)]]
+-
+Source: s D . Anything else? </s>|<s> <usr> movie New request . War . </s>|<s> <sys> movie I believe you said War . Okay, you dont_care, do you? </s>|<s> <usr> movie That' s wrong . Family movies . Yes . </s>
+movie:: True: <sys> movie Okay, you dont_care, do you? ||| Pred: <sys> movie {" QUERY ": {"# genre ": " War ", "# years ": " Family ", "# country ": " Family "}, " GOALS ": ["# director "]}
+[[Attention: <sys>(0.8874155879020691) ":(0.46287184953689575) "(0.4586028754711151) War(0.5935012102127075) ",(0.11344655603170395) "#(0.13000740110874176) "(0.5757835507392883) Family(0.8925026059150696) Family(0.893975555896759) </s>(0.6678104996681213)]]
+-
+Source: Do you mean Germany? </s>|<s> <usr> movie That' s correct . </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Sport ", "# years ": " 60s ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 75 "}} </s>
+movie:: True: <sys> movie Movie 75 is a good choice . Are you happy about my answer? ||| Pred: <sys> movie Movie 75 is a good choice . Are you happy about my answer?
+[[Attention: <sys>(0.7488827705383301) 75(0.31259721517562866) 75(0.9995506405830383) is(0.9983317255973816) a(0.972262978553772) good(0.9836201667785645) choice(0.9984806180000305) .(0.5308278203010559) you(0.4735475182533264) ?(0.740643322467804) </s>(0.8898460268974304)]]
+-
+Source: Germany? </s>|<s> <usr> movie That' s wrong . </s>|<s> <sys> movie Do you mean Thailand? </s>|<s> <usr> movie That' s wrong . </s>|<s> <sys> movie Do you mean Mexico? </s>|<s> <usr> movie Wrong . </s>
+movie:: True: <sys> movie Do you mean Thailand? ||| Pred: <sys> movie Do you mean Thailand?
+[[Attention: <sys>(0.6660804152488708) movie(0.53508460521698) Do(0.11274115741252899) you(0.295599102973938) mean(0.464802622795105) Thailand(0.5392873287200928) ?(0.5703920125961304) </s>(0.6748093366622925)]]
+-
+Source: s>|<s> <usr> movie One more thing . Who is the director?. </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Western ", "# years ": " 60s ", "# </s>|<s> <usr> movie {" RET ": {"# director ": " F "}} </s>
+movie:: True: <sys> movie It' s director by F . Anything else? ||| Pred: <sys> movie No, The movie is F . Are you happy about my answer?
+[[Attention: <sys>(0.47613558173179626) movie(0.3663135766983032) is(0.6252032518386841) F(0.9940710663795471) .(0.7175421714782715) you(0.35021013021469116) ?(0.6078509092330933) </s>(0.5229118466377258)]]
+-
+Source: s> movie Do you mean 90s? </s>|<s> <usr> movie Uh - huh . </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Family ", "# years ": " 90s ", "# </s>|<s> <usr> movie {" RET ": {"# default ": " 123 "}} </s>
+movie:: True: <sys> movie Movie 123 is a good choice . Anything else? ||| Pred: <sys> movie Movie 123 is a good choice . Are you happy about my answer?
+[[Attention: <sys>(0.6756462454795837) 123(0.12249381095170975) 123(0.9999481439590454) is(0.9897232055664062) a(0.98628830909729) good(0.989587664604187) choice(0.9934450387954712) .(0.9018570184707642) you(0.7116280198097229) happy(0.6980957388877869) about(0.8276751041412354) my(0.8651018738746643) answer(0.9074981808662415) ?(0.6619564294815063) </s>(0.7796831727027893)]]
+-
+Source:  <usr> movie I have more requests . Which company? </s>|<s> <sys> movie {" QUERY ": {"# genre ": " Fantasy ", "# years ": " 80s ", "# </s>|<s> <usr> movie {" RET ": {"# company ": " Universal "}} </s>
+movie:: True: <sys> movie The movie is from Universal . Are you happy about my answer? ||| Pred: <sys> movie No, The movie is Universal . Are you happy about my answer?
+[[Attention: <sys>(0.9947534799575806) ,(0.14595848321914673) is(0.48903191089630127) Universal(0.9998413324356079) .(0.6661352515220642) you(0.8060734272003174) happy(0.9647040367126465) about(0.9473896622657776) my(0.9885076284408569) answer(0.9272302985191345) ?(0.3283540606498718) </s>(0.6598142385482788)]]
+-
+Generate report for movie for 1000 samples
+
+==== REPORT====
+Domain: movie
+Entity precision 0.490308 recall 0.790441 and f1 0.605208
+Intent precision 0.852090 recall 0.817397 and f1 0.834383
+KB precision 0.910204 recall 0.682479 and f1 0.780061
+BLEU 0.521776 BEAK 0.673319
+
+query: 0.5965548318193723
+implicit_confirm: 0.4803788754153886
+explicit_confirm: 0.17717980473183026
+request: 0.4319450829235782
+inform: 0.5716533190918033
+goodbye: 0.2013967198927517
+greet: 0.7016122302689455
+
+Generation Done
+Update patience to 16.0
+Model Saved.
+
