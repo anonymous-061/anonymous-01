@@ -1,4 +1,7 @@
-"logs**" file is the results of our method R-M.
+Data set can be found [here](https://github.com/snakeztc/NeuralDialog-ZSDG/tree/master/data/simdial).
+
+
+"logs****" file is the results of R-M:
 
 **** Epcoch 9/100 ****
 
