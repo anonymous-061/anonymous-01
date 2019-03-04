@@ -1,1 +1,1 @@
-"log**" file is the results of our method R-M.
+"logs**" file is the results of our method R-M.
