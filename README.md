@@ -1,7 +1,7 @@
 Data set can be found [here](https://github.com/snakeztc/NeuralDialog-ZSDG/tree/master/data/simdial).
 
 
-"logs****" file is the results of R-M:
+"logs****" file is the results of R-M. The result of R to M we reported is Epcoch 9:
 
 **** Epcoch 9/100 ****
 
